@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fadil Gbonjubola — training in progress</title>
+<meta name="description" content="Fadil Gbonjubola — builder working toward a career in AI/ML. The site is one continuous training run: scroll to converge." />
+<link rel="preconnect" href="https://rsms.me/" />
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- BOOT -->
+<div id="boot" aria-hidden="true">
+  <div class="boot-inner">
+    <div class="boot-line" data-t="0"><span class="accent">fadil</span>@portfolio % init</div>
+    <div class="boot-line" data-t="220">mounting dataset ......... <span class="ok">ok</span></div>
+    <div class="boot-line" data-t="420">loading weights ........... <span class="ok">ok</span></div>
+    <div class="boot-line" data-t="620">starting training run ..... <span class="ok">ok</span></div>
+    <div class="boot-bar" data-t="700"><i></i></div>
+  </div>
+</div>
+
+<!-- FIXED LAYERS -->
+<canvas id="field"></canvas>
+<div class="vignette"></div>
+<div id="progress"></div>
+
+<div id="hud" aria-hidden="true">
+  <div class="row"><span class="k">run</span><span class="v">fadil_v2026</span></div>
+  <div class="row"><span class="k">stage</span><span class="v stage" id="hud-stage">noise</span></div>
+  <div class="row"><span class="k">epoch</span><span class="v" id="hud-epoch">000/012</span></div>
+  <div class="row"><span class="k">loss</span><span class="v" id="hud-loss">2.8471</span></div>
+  <div class="lossbar"><i id="hud-bar"></i></div>
+</div>
+
+<!-- CURSOR -->
+<div id="cursor">
+  <span class="bracket b-tl"></span><span class="bracket b-tr"></span>
+  <span class="bracket b-bl"></span><span class="bracket b-br"></span>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a class="nav-logo" href="#"><span class="dot"></span>fadil</a>
+  <a class="nav-link" href="#s-label">Experience</a>
+  <a class="nav-link" href="#s-train">Projects</a>
+  <a class="nav-link" href="#s-converge">About</a>
+  <button class="annot-toggle" id="annotToggle" title="Toggle annotation mode" aria-label="Toggle annotation mode" aria-pressed="false">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6">
+      <rect x="3" y="3" width="10" height="10" rx="1.5"/>
+      <rect x="1" y="1" width="3" height="3" rx="0.8" fill="currentColor" stroke="none"/>
+      <rect x="12" y="1" width="3" height="3" rx="0.8" fill="currentColor" stroke="none"/>
+      <rect x="1" y="12" width="3" height="3" rx="0.8" fill="currentColor" stroke="none"/>
+      <rect x="12" y="12" width="3" height="3" rx="0.8" fill="currentColor" stroke="none"/>
+    </svg>
+  </button>
+  <a class="nav-cta" href="mailto:fadil.gbon@gmail.com">Get in touch</a>
+</nav>
+
+<main>
+
+<!-- ═══ SCENE 1 · NOISE ═══ -->
+<section class="scene" id="s-noise">
+  <div class="scene-inner wrap reveal">
+    <div class="scene-eyebrow">
+      <span class="pill" data-annotate="status" data-conf="0.99" data-c="3">
+        <span class="status-dot"></span>
+        <span class="micro">Open to AI/ML/SWE opportunities · Canada/US</span>
+      </span>
+    </div>
+    <h1 class="story" data-annotate="human" data-conf="0.99">
+      <span class="ln"><span>Every model</span></span>
+      <span class="ln"><span>begins as <span class="dim">noise.</span></span></span>
+    </h1>
+    <p class="scene-sub">I'm <strong>Fadil</strong> — a builder working toward a career in AI/ML.
+    I label the data, tune the models, and ship the apps.
+    Scroll to learn more! <span class="micro" style="text-transform:none;letter-spacing:.02em">↓ training begins</span></p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary magnetic" href="#s-train">
+        Skip to outputs
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3v10M4 9.5L8 13l4-3.5"/></svg>
+      </a>
+      <a class="btn btn-ghost magnetic" href="https://github.com/fadilgbon" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SCENE 2 · LABELING ═══ -->
+<section class="scene" id="s-label">
+  <div class="scene-inner wrap reveal">
+    <div class="scene-eyebrow">
+      <span class="micro"><span class="tick">stage 01</span> — labeling</span>
+    </div>
+    <h2 class="story">
+      <span class="ln"><span>First, the data</span></span>
+      <span class="ln"><span>gets <span class="grad">labeled.</span></span></span>
+    </h2>
+    <p class="scene-sub">Models only learn what someone teaches them. I've drawn the bounding boxes, ranked the outputs, and tagged the datasets that models train on. <strong>It's also where I learned to look closely.</strong></p>
+
+    <div class="xp">
+      <div class="glass-card xp-card reveal" data-annotate="experience" data-conf="0.97">
+        <div class="xp-when"><span class="micro">Jan — Apr 2026<br/>Calgary, AB</span></div>
+        <div>
+          <div class="xp-role">AI Data Annotator <span class="xp-org">The Annotator</span></div>
+          <p class="xp-body">Ranked LLM outputs for benchmarking, labeled UI screenshots with 100–500+ bounding boxes per image for computer vision training, and tagged multimodal datasets to improve classification accuracy.</p>
+          <div class="xp-tags"><span class="chip">llm_eval</span><span class="chip">bounding_boxes</span><span class="chip">multimodal</span></div>
+        </div>
+      </div>
+      <div class="glass-card xp-card reveal d1" data-annotate="experience" data-conf="0.95">
+        <div class="xp-when"><span class="micro">Sep 2022 — Dec 2025<br/>Calgary, AB</span></div>
+        <div>
+          <div class="xp-role">Business Operations Associate <span class="xp-org">Hush Jewels</span></div>
+          <p class="xp-body">Ran retail popup events end-to-end — setup, sales, customer service — processed weekly order fulfillment, and audited inventory to maintain stock accuracy.</p>
+          <div class="xp-tags"><span class="chip alt">operations</span><span class="chip alt">fulfillment</span><span class="chip alt">inventory</span></div>
+        </div>
+      </div>
+      <div class="glass-card xp-card reveal d2" data-annotate="community" data-conf="0.92" data-c="2">
+        <div class="xp-when"><span class="micro">Ongoing<br/>UCalgary</span></div>
+        <div>
+          <div class="xp-role">Member <span class="xp-org">Data Science &amp; Machine Learning Club</span></div>
+          <p class="xp-body">Attend events like a hands-on Databricks workshop (DSMLC × ADSS) covering workflow automation, data warehousing, and visualization on the Databricks platform.</p>
+          <div class="xp-tags"><span class="chip alt">databricks</span><span class="chip alt">community</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SCENE 3 · TRAINING ═══ -->
+<section class="scene" id="s-train">
+  <div class="scene-inner wrap reveal">
+    <div class="scene-eyebrow">
+      <span class="micro"><span class="tick">stage 02</span> — training</span>
+    </div>
+    <h2 class="story">
+      <span class="ln"><span>Then, the</span></span>
+      <span class="ln"><span>model <span class="grad">trains.</span></span></span>
+    </h2>
+    <p class="scene-sub">Every project below is like a training run: data in, working software out</p>
+
+    <div class="grid">
+      <div class="glass-card proj wide reveal" data-annotate="ml_project" data-conf="0.94">
+        <div class="proj-top">
+          <div class="proj-icon">🏨</div>
+          <a class="proj-link" href="https://github.com/fadilgbon/Hotel-Booking-Cancellation-Predictor" target="_blank" rel="noopener">code <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9l6-6M4 3h5v5"/></svg></a>
+        </div>
+        <h3>Hotel Booking Cancellation Predictor</h3>
+        <div class="metric">roc_auc = 0.9415 · n = 119,000+</div>
+        <p>Built and tuned 5 ML models on 119K+ bookings to predict cancellations. Random Forest reached 0.9415 ROC-AUC after hyperparameter tuning with GridSearchCV, on top of a full preprocessing pipeline for splits and categorical encoding.</p>
+        <div class="proj-tags"><span class="chip">python</span><span class="chip">scikit-learn</span><span class="chip">pandas</span><span class="chip">matplotlib</span></div>
+        <div class="run-strip">
+          <span>models: 5</span><span>·</span>
+          <span>best: random_forest</span><span>·</span>
+          <span>tuning: grid_search_cv</span><span>·</span>
+          <span>status: <b>converged ✓</b></span>
+        </div>
+      </div>
+
+      <div class="glass-card proj reveal" data-annotate="project" data-conf="0.91" data-c="2">
+        <div class="proj-top">
+          <div class="proj-icon">🎵</div>
+          <a class="proj-link" href="https://github.com/fadilgbon/Spotify-Playlist-Manager" target="_blank" rel="noopener">code <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9l6-6M4 3h5v5"/></svg></a>
+        </div>
+        <h3>Spotify Playlist Manager</h3>
+        <div class="metric">30+ unit tests</div>
+        <p>Desktop app for managing playlists via a GUI, with CSV file I/O and 30+ JUnit tests. Built on clean OOP — inheritance, abstraction, polymorphism.</p>
+        <div class="proj-tags"><span class="chip alt">java</span><span class="chip alt">javafx</span><span class="chip alt">junit 5</span></div>
+      </div>
+
+      <div class="glass-card proj reveal d1" data-annotate="project" data-conf="0.90" data-c="2">
+        <div class="proj-top">
+          <div class="proj-icon">🎬</div>
+          <a class="proj-link" href="https://github.com/fadilgbon/IMDB-Movie-Library" target="_blank" rel="noopener">code <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9l6-6M4 3h5v5"/></svg></a>
+        </div>
+        <h3>IMDB-Style Movie Database</h3>
+        <div class="metric">10,000+ titles via live API</div>
+        <p>Modular movie library querying 10,000+ titles through the Watchmode API, with a recommendation quiz and local user authentication.</p>
+        <div class="proj-tags"><span class="chip alt">java</span><span class="chip alt">javafx</span><span class="chip alt">watchmode api</span></div>
+      </div>
+
+      <div class="glass-card proj reveal" data-annotate="project" data-conf="0.88" data-c="2">
+        <div class="proj-top"><div class="proj-icon">⭕</div></div>
+        <h3>Tic-Tac-Toe GUI Game</h3>
+        <div class="metric">heuristic ai · live scoreboard</div>
+        <p>2-player and AI tic-tac-toe with a live scoreboard and a custom heuristic AI for defensive blocking and move selection.</p>
+        <div class="proj-tags"><span class="chip alt">python</span><span class="chip alt">tkinter</span></div>
+      </div>
+
+      <div class="glass-card proj reveal d1" data-annotate="project" data-conf="0.87" data-c="2">
+        <div class="proj-top">
+          <div class="proj-icon">🎞️</div>
+          <a class="proj-link" href="https://github.com/fadilgbon/Movie-Player" target="_blank" rel="noopener">code <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9l6-6M4 3h5v5"/></svg></a>
+        </div>
+        <h3>Movie Player</h3>
+        <div class="metric">secure login · 10+ accounts</div>
+        <p>Swing desktop app for managing a movie library, with secure login for 10+ accounts and persistent local storage via Java file I/O.</p>
+        <div class="proj-tags"><span class="chip alt">java</span><span class="chip alt">swing</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SCENE 4 · CONVERGENCE ═══ -->
+<section class="scene" id="s-converge">
+  <div class="scene-inner wrap reveal">
+    <div class="scene-eyebrow">
+      <span class="micro"><span class="tick">stage 03</span> — convergence</span>
+    </div>
+    <h2 class="story">
+      <span class="ln"><span>Eventually,</span></span>
+      <span class="ln"><span>it <span class="grad">converges.</span></span></span>
+    </h2>
+    <p class="scene-sub">Here's the current checkpoint.</p>
+
+    <div class="glass-card model-card reveal" data-annotate="model_card" data-conf="0.99" data-c="3">
+      <div class="mc-head">
+        <div class="name"><span>fadil-gbonjubola</span><span class="micro">v2026.1</span></div>
+        <span class="chip">status: training</span>
+      </div>
+      <div class="mc-rows">
+        <div class="mc-row">
+          <div class="mc-key">Architecture</div>
+          <div class="mc-val">Builder with a bias for agency — if something's missing or broken, I'll build the fix.</div>
+        </div>
+        <div class="mc-row">
+          <div class="mc-key">Training data</div>
+          <div class="mc-val">BSc Data Science + Mathematics, Management minor — University of Calgary <span class="soft">(graduating Dec 2028)</span></div>
+        </div>
+        <div class="mc-row">
+          <div class="mc-key">Parameters</div>
+          <div class="mc-val"><div class="chips">
+            <span class="chip">python</span><span class="chip">java</span><span class="chip">sql</span><span class="chip">r</span>
+            <span class="chip alt">scikit-learn</span><span class="chip alt">pandas</span><span class="chip alt">numpy</span><span class="chip alt">git</span><span class="chip alt">databricks</span><span class="chip alt">rest apis</span>
+          </div></div>
+        </div>
+        <div class="mc-row">
+          <div class="mc-key">Capabilities</div>
+          <div class="mc-val">ML classification · hyperparameter tuning · data preprocessing · data annotation · OOP design</div>
+        </div>
+        <div class="mc-row">
+          <div class="mc-key">Loss curve</div>
+          <div class="mc-val loss-wrap">
+            <svg width="180" height="44" viewBox="0 0 180 44" aria-hidden="true">
+              <path class="loss-path" d="M2 6 C 24 10, 32 26, 56 30 S 100 34, 124 37 S 164 39.5, 178 40"/>
+              <circle class="loss-dot" cx="178" cy="40" r="3.5"/>
+            </svg>
+            <span class="micro">loss ↓ · still training</span>
+          </div>
+        </div>
+        <div class="mc-row">
+          <div class="mc-key">Intended use</div>
+          <div class="mc-val">AI/ML engineering, data science, and building useful things. <span class="soft">Fine-tunes well on hard problems.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SCENE 5 · INFERENCE ═══ -->
+<section class="scene" id="s-inference">
+  <div class="scene-inner wrap reveal">
+    <div class="scene-eyebrow" style="justify-content:center">
+      <span class="micro"><span class="tick">stage 04</span> — inference</span>
+    </div>
+    <h2 class="story" data-annotate="call_to_action" data-conf="1.00" style="margin:0 auto;max-width:14ch">
+      <span class="ln"><span>Ready for</span></span>
+      <span class="ln"><span><span class="grad">inference.</span></span></span>
+    </h2>
+    <div class="hero-ctas">
+      <a class="btn btn-primary magnetic" href="mailto:fadil.gbon@gmail.com">fadil.gbon@gmail.com</a>
+    </div>
+    <div class="socials">
+      <a class="soc magnetic" href="https://www.linkedin.com/in/fadilgbon/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+      </a>
+      <a class="soc magnetic" href="https://github.com/fadilgbon" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85V21c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span class="micro">designed + built by fadil</span>
+  </div>
+</footer>
+
+<div id="annot-layer" aria-hidden="true"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
