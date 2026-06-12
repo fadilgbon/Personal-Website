@@ -1,4 +1,4 @@
-# Fadil Gbonjubola — Personal Website
+# Personal Website
 
 A single-page portfolio built around an ML training metaphor: scroll through noise → labeling → training → convergence → inference. The background particle field morphs with each stage as you move down the page.
 
